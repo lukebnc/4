@@ -1,0 +1,125 @@
+{
+  "timestamp": "2025-12-04T13:22:49.358849",
+  "total_tests": 16,
+  "passed_tests": 13,
+  "failed_tests": 3,
+  "success_rate": 81.25,
+  "test_details": [
+    {
+      "test_name": "User Registration",
+      "status": "PASSED",
+      "details": "",
+      "timestamp": "2025-12-04T13:22:48.448699"
+    },
+    {
+      "test_name": "User Login",
+      "status": "FAILED",
+      "details": "Status: 401, Response: {'detail': 'Credenciales inv\u00e1lidas'}",
+      "timestamp": "2025-12-04T13:22:48.706724"
+    },
+    {
+      "test_name": "Get User Profile",
+      "status": "PASSED",
+      "details": "",
+      "timestamp": "2025-12-04T13:22:48.748755"
+    },
+    {
+      "test_name": "Daily Quest Generation",
+      "status": "FAILED",
+      "details": "Status: 500, Response: {'raw_response': 'Internal Server Error'}",
+      "timestamp": "2025-12-04T13:22:48.788030"
+    },
+    {
+      "test_name": "Complete Quest",
+      "status": "FAILED",
+      "details": "No daily quest ID available",
+      "timestamp": "2025-12-04T13:22:48.788042"
+    },
+    {
+      "test_name": "Fail Quest and Get Punishment",
+      "status": "PASSED",
+      "details": "",
+      "timestamp": "2025-12-04T13:22:48.859024"
+    },
+    {
+      "test_name": "Special Dungeons Listing",
+      "status": "PASSED",
+      "details": "",
+      "timestamp": "2025-12-04T13:22:48.894856"
+    },
+    {
+      "test_name": "Shop Items Listing",
+      "status": "PASSED",
+      "details": "",
+      "timestamp": "2025-12-04T13:22:48.934439"
+    },
+    {
+      "test_name": "Buy Shop Item",
+      "status": "PASSED",
+      "details": "",
+      "timestamp": "2025-12-04T13:22:48.969559"
+    },
+    {
+      "test_name": "Guild Creation",
+      "status": "PASSED",
+      "details": "",
+      "timestamp": "2025-12-04T13:22:49.028769"
+    },
+    {
+      "test_name": "Guild Listing",
+      "status": "PASSED",
+      "details": "",
+      "timestamp": "2025-12-04T13:22:49.066106"
+    },
+    {
+      "test_name": "Join Guild",
+      "status": "PASSED",
+      "details": "Already in guild (expected)",
+      "timestamp": "2025-12-04T13:22:49.219797"
+    },
+    {
+      "test_name": "Player Ranking",
+      "status": "PASSED",
+      "details": "",
+      "timestamp": "2025-12-04T13:22:49.259058"
+    },
+    {
+      "test_name": "Guild Ranking",
+      "status": "PASSED",
+      "details": "",
+      "timestamp": "2025-12-04T13:22:49.291102"
+    },
+    {
+      "test_name": "Achievements Listing",
+      "status": "PASSED",
+      "details": "",
+      "timestamp": "2025-12-04T13:22:49.324373"
+    },
+    {
+      "test_name": "Stat Upgrade",
+      "status": "PASSED",
+      "details": "No stat points available (expected)",
+      "timestamp": "2025-12-04T13:22:49.358795"
+    }
+  ],
+  "failed_test_details": [
+    {
+      "test": "User Login",
+      "error": "Status: 401, Response: {'detail': 'Credenciales inv\u00e1lidas'}",
+      "expected_status": 200,
+      "actual_status": 401
+    },
+    {
+      "test": "Daily Quest Generation",
+      "error": "Status: 500, Response: {'raw_response': 'Internal Server Error'}",
+      "expected_status": 200,
+      "actual_status": 500
+    },
+    {
+      "test": "Complete Quest",
+      "error": "No daily quest ID available",
+      "expected_status": null,
+      "actual_status": null
+    }
+  ]
+}

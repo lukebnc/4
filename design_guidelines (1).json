@@ -1,0 +1,142 @@
+{
+  "project_name": "Solo Leveling System - Real Life RPG",
+  "design_philosophy": {
+    "theme": "The System",
+    "core_concept": "You are the Player. The world is your dungeon.",
+    "aesthetic": "Dark, Neon, Holographic, Sharp, Dangerous",
+    "emotion": "Awakening, Power, Progression, Urgency"
+  },
+  "typography": {
+    "font_family": {
+      "heading": "Exo 2, sans-serif",
+      "body": "Rajdhani, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "scale": {
+      "h1": "text-5xl md:text-7xl font-black tracking-tighter uppercase",
+      "h2": "text-3xl md:text-5xl font-bold tracking-tight uppercase",
+      "h3": "text-2xl md:text-3xl font-semibold tracking-wide text-blue-400",
+      "body": "text-base md:text-lg font-medium leading-relaxed",
+      "caption": "text-xs md:text-sm font-mono text-slate-400 uppercase tracking-widest"
+    },
+    "imports": [
+      "https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+    ]
+  },
+  "colors": {
+    "palette": {
+      "background": "#020617",
+      "foreground": "#F8FAFC",
+      "card": "#0F172A",
+      "card_foreground": "#F8FAFC",
+      "popover": "#0F172A",
+      "popover_foreground": "#F8FAFC",
+      "primary": "#3B82F6",
+      "primary_foreground": "#020617",
+      "secondary": "#1E293B",
+      "secondary_foreground": "#F8FAFC",
+      "muted": "#1E293B",
+      "muted_foreground": "#94A3B8",
+      "accent": "#1E293B",
+      "accent_foreground": "#F8FAFC",
+      "destructive": "#EF4444",
+      "destructive_foreground": "#F8FAFC",
+      "border": "#1E293B",
+      "input": "#1E293B",
+      "ring": "#3B82F6"
+    },
+    "special_colors": {
+      "system_blue": "#3B82F6",
+      "system_glow": "0 0 20px rgba(59, 130, 246, 0.5)",
+      "shadow_purple": "#A855F7",
+      "danger_red": "#EF4444",
+      "rank_s": "#F59E0B",
+      "rank_a": "#A855F7",
+      "rank_b": "#3B82F6",
+      "rank_c": "#22C55E",
+      "rank_d": "#94A3B8",
+      "rank_e": "#64748B"
+    }
+  },
+  "layout": {
+    "grid_system": "The Control Room Grid",
+    "spacing": "Generous (p-6 to p-12) for main containers, Tight (gap-2) for data lists",
+    "container_style": "Sharp edges, 1px border, glass background",
+    "modes": {
+      "dashboard": "grid grid-cols-1 md:grid-cols-4 gap-6",
+      "quest_list": "flex flex-col gap-4",
+      "hero": "min-h-[80vh] flex items-center justify-center relative overflow-hidden"
+    }
+  },
+  "components": {
+    "cards": {
+      "style": "bg-slate-950/80 backdrop-blur-md border border-blue-500/30 shadow-[0_0_15px_rgba(59,130,246,0.1)] rounded-sm",
+      "hover": "hover:border-blue-400 hover:shadow-[0_0_25px_rgba(59,130,246,0.3)] transition-all duration-300"
+    },
+    "buttons": {
+      "primary": "bg-blue-600 hover:bg-blue-500 text-white font-bold uppercase tracking-widest px-8 py-3 rounded-none border border-blue-400 shadow-[0_0_10px_rgba(59,130,246,0.5)]",
+      "secondary": "bg-transparent border border-slate-600 text-slate-300 hover:border-white hover:text-white uppercase tracking-widest px-6 py-2 rounded-none",
+      "danger": "bg-red-900/50 border border-red-500 text-red-100 hover:bg-red-800 uppercase tracking-widest"
+    },
+    "inputs": {
+      "style": "bg-slate-900/50 border-slate-700 focus:border-blue-500 focus:ring-1 focus:ring-blue-500 rounded-none text-white placeholder:text-slate-600"
+    },
+    "modals": {
+      "style": "bg-slate-950 border-2 border-blue-500 shadow-[0_0_50px_rgba(59,130,246,0.2)] rounded-none p-0"
+    }
+  },
+  "visual_enhancers": {
+    "borders": "Tracing Beam effect on key cards",
+    "glassmorphism": "Heavy blur (backdrop-blur-xl) with low opacity backgrounds",
+    "glows": "Text shadows on headings (text-shadow-blue)",
+    "animations": {
+      "glitch": "Use on hover for interactive elements",
+      "pulse": "For urgent quests or notifications",
+      "slide_in": "Staggered entrance for list items"
+    }
+  },
+  "image_urls": {
+    "backgrounds": [
+      {
+        "url": "https://images.unsplash.com/photo-1663511172522-17006d0e9eb7",
+        "description": "Dark city night with blue glow - Landing Hero",
+        "category": "hero"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1762702802267-e13aae28b281",
+        "description": "Blue glowing dungeon corridor - Dungeons/Quests",
+        "category": "dungeon"
+      }
+    ],
+    "fitness": [
+      {
+        "url": "https://images.unsplash.com/photo-1561570121-c8219daec12b",
+        "description": "Intense workout dark lighting - Training Mode",
+        "category": "training"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1734630341082-0fec0e10126c",
+        "description": "Dumbbells in dark gym - Shop/Inventory",
+        "category": "shop"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "1. FORCE DARK MODE: Override the :root variables in index.css with the dark palette provided above. Do not support light mode.",
+    "2. FONT SETUP: Add the Google Fonts import to index.css immediately.",
+    "3. SHADCN OVERRIDE: Customize components/ui to remove 'rounded-md' and replace with 'rounded-none' or 'rounded-sm'. The System is sharp, not soft.",
+    "4. BORDERS: Every card must have a border. Use 'border-blue-500/20' as default.",
+    "5. GLOW EFFECTS: Create a utility class '.text-glow' { text-shadow: 0 0 10px rgba(59,130,246,0.7); }",
+    "6. LAYOUT: Use the 'Control Room Grid' for the dashboard. Dense data, high contrast.",
+    "7. IMAGES: Use the provided image URLs for backgrounds. Apply a dark blue overlay (bg-blue-950/80) on top of images to ensure text readability.",
+    "8. DATA-TESTID: Add data-testid to all interactive elements (buttons, inputs, quest items)."
+  ],
+  "universal_guidelines": [
+    "Don't make generic centered layouts.",
+    "Create depth through layered design elements with z-index hierarchy.",
+    "Use glass-morphism effects with backdrop filters.",
+    "Every interaction needs micro-animations.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "Subtle grain textures and noise overlays are recommended."
+  ]
+}
